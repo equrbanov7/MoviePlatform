@@ -15,7 +15,7 @@ interface Movie {
   }
 
 interface MoviesSectionProps {
-    title:string,
+    title:string |undefined,
     movies: Movie[]
 }
 
