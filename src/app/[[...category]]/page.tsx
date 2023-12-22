@@ -14,8 +14,13 @@ interface HomeProps {
 
 }
 
-const Home: React.FC<HomeProps> = ({ params }) => {
+async function delay(ms:number) {
+  return new Promise((resolve) => setTimeout(resolve,ms))
+}
+
+  const Home: React.FC<HomeProps> = async ({ params }) => {
  
+    await delay(20000)
   // console.log(params.category?.[0]);
 
   // Initialize selectedCategory as false
